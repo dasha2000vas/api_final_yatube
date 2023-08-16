@@ -41,9 +41,55 @@ python manage.py runserver
 
 ## Примеры запросов:
 
-- GET http://127.0.0.1:8000/api/v1/posts/ - получение списка публикаций
-- POST http://127.0.0.1:8000/api/v1/posts/ - создание публикации авторизованным пользователем
+url: http://127.0.0.1:8000/api/v1/posts/
 
-- GET http://127.0.0.1:8000/api/v1/posts/1/ - получение конкретной публиукации
-- PATCH http://127.0.0.1:8000/api/v1/posts/1/ - изменение публикации
-- DELETE http://127.0.0.1:8000/api/v1/posts/1/ - удаление публикации
+### GET-запрос
+
+Response
+
+```json
+{
+  "count": 123,
+  "next": "http://api.example.org/accounts/?offset=400&limit=100",
+  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "results": [
+    {
+      "id": 0,
+      "author": "string",
+      "text": "string",
+      "pub_date": "2021-10-14T20:41:29.648Z",
+      "image": "string",
+      "group": 0
+    }
+  ]
+}
+```
+
+### POST-запрос
+
+Request
+
+```json
+{
+  "text": "string",
+  "image": "string",
+  "group": 0
+}
+```
+
+Response
+
+```json
+{
+  "id": 0,
+  "author": "string",
+  "text": "string",
+  "pub_date": "2019-08-24T14:15:22Z",
+  "image": "string",
+  "group": 0
+}
+```
+
+## Использованные технологии
+
+Проект создан с помощью приложения VSCode на языке Python. Импортированы следующие пакеты: django, djangorestframework.
