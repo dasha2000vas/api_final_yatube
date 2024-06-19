@@ -1,4 +1,4 @@
-# api_final
+# api_yatube
 
 api_yatube - это API для размещения постов и комментариев к ним. Этот сервис позволит людям из разных уголков мира обмениваться информацией, а также делиться своим мнением о ней.
 
@@ -93,3 +93,11 @@ Response
 ## Использованные технологии
 
 Проект создан с помощью приложения VSCode на языке Python. Импортированы следующие пакеты: django, djangorestframework.
+
+## Автор:
+
+* Василевская Дарья
+* GitHub: https://github.com/dasha2000vas
+* Телеграм: https://t.me/vasdascha
+* Почта: vasilevsckaya.dascha@yandex.ru
+
